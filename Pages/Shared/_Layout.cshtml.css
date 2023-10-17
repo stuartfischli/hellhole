@@ -11,6 +11,11 @@ a {
   color: #0077cc;
 }
 
+body {
+    background-image: url('https://hellholeseating.blob.core.windows.net/seatingarrangements/PXL_20220805_120454736.jpg');
+    margin: 0;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
