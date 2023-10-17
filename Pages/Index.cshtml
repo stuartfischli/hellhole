@@ -14,8 +14,9 @@
     var startDate = DateTime.Parse("03/21/2023").Date;
     var currentDate = DateTime.Today.Date;
     var totalDays = (currentDate - startDate).Days;
-        
-    rem = Math.DivRem(totalDays, 4, out rem);
+
+    var rem = 0;
+    Math.DivRem(totalDays, 4, out rem);
     
     if (rem == 0)
     {
@@ -48,7 +49,7 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Seating Arrangements</h1>
+    <h1 class="display-4">@GoodPlace</h1>
     <p>Watch <a href="https://youtu.be/VWvz7xicMnY?si=tak0Lo4L0aSPVaEm">Michael rowed the boat ashore</a>.</p>
     <hr />
     <div>Host operating system: @Model.OSVersion</div>
