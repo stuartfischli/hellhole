@@ -4,50 +4,49 @@
     ViewData["Title"] = "Home page";
 }
 @{
-string Hellhole = "";
-string GoodPlace = "";
-string MediumPlace = "";
-string BadPlace = "";
-
-string filename = @"C:\Users\stuartfischli\CPP\Seating Arrangements.html";
-
-void assignSeating()
-{
-    var startDate = DateTime.Parse("21/03/2023").Date;
-    var currentDate = DateTime.Today.Date;
-    var totalDays = (currentDate - startDate).Days;
-    int rem;
-
-    Math.DivRem(totalDays, 4, out rem);
-
-    if (rem == 0)
+    string Hellhole = "";
+    string GoodPlace = "";
+    string MediumPlace = "";
+    string BadPlace = "";
+    
+    
+    void assignSeating()
     {
-        Hellhole = "Gus";
-        GoodPlace = "Terry";
-        MediumPlace = "Maggie";
-        BadPlace = "Nard &#128058;";
-    }
-    else if (rem == 1)
-    {
-        Hellhole = "Nard &#128058;";
-        GoodPlace = "Gus";
-        MediumPlace = "Terry";
-        BadPlace = "Maggie";
-    }
-    else if (rem == 2)
-    {
-        Hellhole = "Maggie";
-        GoodPlace = "Nard &#128058;";
-        MediumPlace = "Gus";
-        BadPlace = "Terry";
-    }
-    else if (rem == 3)
-    {
-        Hellhole = "Terry";
-        GoodPlace = "Maggie";
-        MediumPlace = "Nard &#128058;";
-        BadPlace = "Gus";
-    }
+        var startDate = DateTime.Parse("21/03/2023").Date;
+        var currentDate = DateTime.Today.Date;
+        var totalDays = (currentDate - startDate).Days;
+        int rem;
+    
+        Math.DivRem(totalDays, 4, out rem);
+    
+        if (rem == 0)
+        {
+            Hellhole = "Gus";
+            GoodPlace = "Terry";
+            MediumPlace = "Maggie";
+            BadPlace = "Nard &#128058;";
+        }
+        else if (rem == 1)
+        {
+            Hellhole = "Nard &#128058;";
+            GoodPlace = "Gus";
+            MediumPlace = "Terry";
+            BadPlace = "Maggie";
+        }
+        else if (rem == 2)
+        {
+            Hellhole = "Maggie";
+            GoodPlace = "Nard &#128058;";
+            MediumPlace = "Gus";
+            BadPlace = "Terry";
+        }
+        else if (rem == 3)
+        {
+            Hellhole = "Terry";
+            GoodPlace = "Maggie";
+            MediumPlace = "Nard &#128058;";
+            BadPlace = "Gus";
+        }
 }
 
 <div class="text-center">
