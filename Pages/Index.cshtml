@@ -15,7 +15,7 @@
     var currentDate = DateTime.Today.Date;
     var totalDays = (currentDate - startDate).Days;
         
-    var rem = 1;
+    rem = Math.DivRem(totalDays, 4, out rem);
     
     if (rem == 0)
     {
