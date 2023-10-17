@@ -23,11 +23,11 @@
         Hellhole = "Gus";
         GoodPlace = "Terry";
         MediumPlace = "Maggie";
-        BadPlace = "Nard &#128058;";
+        BadPlace = "Nard";
     }
     else if (rem == 1)
     {
-        Hellhole = "Nard &#128058;";
+        Hellhole = "Nard";
         GoodPlace = "Gus";
         MediumPlace = "Terry";
         BadPlace = "Maggie";
@@ -35,7 +35,7 @@
     else if (rem == 2)
     {
         Hellhole = "Maggie";
-        GoodPlace = "Nard &#128058;";
+        GoodPlace = "Nard";
         MediumPlace = "Gus";
         BadPlace = "Terry";
     }
@@ -43,14 +43,17 @@
     {
         Hellhole = "Terry";
         GoodPlace = "Maggie";
-        MediumPlace = "Nard &#128058;";
+        MediumPlace = "Nard";
         BadPlace = "Gus";
     }
 }
 
 <div class="text-center">
-    <h1 class="display-4">@GoodPlace</h1>
+    <h1 class="display-4">Seating Arrangements</h1>
     <p>Watch <a href="https://youtu.be/VWvz7xicMnY?si=tak0Lo4L0aSPVaEm">Michael rowed the boat ashore</a>.</p>
     <hr />
-    <div>Host operating system: @Model.OSVersion</div>
+    <div>Good Place: @GoodPlace</div>
+    <div>Medium Place: @MediumPlace</div>
+    <div>Bad Place: @BadPlace</div>
+    <div>Hellhole: @Hellhole</div>
 </div>
