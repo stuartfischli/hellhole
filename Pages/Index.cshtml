@@ -14,6 +14,7 @@
     var startDate = DateTime.Parse("03/21/2023").Date;
     var currentDate = DateTime.Today.Date;
     var totalDays = (currentDate - startDate).Days;
+    var displayDate = DateTime.Today.ToLongDateString();
 
     var rem = 0;
     Math.DivRem(totalDays, 4, out rem);
@@ -50,7 +51,7 @@
 
 <div class="text-center">
     <h1 class="display-4">Seating Arrangements</h1>
-    <p style="color:#58F908;font-size:200%;text-align:center;font-family:verdana;">@{DateTime.Today.ToLongDateString()}</p>
+    <p style="color:#58F908;font-size:200%;text-align:center;font-family:verdana;">@displayDate</p>
     <p>Watch <a href="https://youtu.be/VWvz7xicMnY?si=tak0Lo4L0aSPVaEm">Michael rowed the boat ashore</a>.</p>
     <hr />
     <div style="color:#08BBF9;font-size:300%;text-align:center;font-family:verdana;">Good Place: @GoodPlace</div>
