@@ -15,7 +15,7 @@ html {
   background-image: url('https://hellholeseating.blob.core.windows.net/seatingarrangements/peter_griffin.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center bottom;
 }
 
 body {
