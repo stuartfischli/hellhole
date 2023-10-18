@@ -10,10 +10,10 @@ html {
 
 html {
   position: relative;
-  max-height: 60%;
-  max-width: 60%;
+  min-height: 100%;
+  min-width: 100%;
   background-image: url('https://hellholeseating.blob.core.windows.net/seatingarrangements/peter_griffin.jpg');
-  background-size: cover;
+  background-size: 60%;
   background-repeat: no-repeat;
   background-position: bottom 2px center;
 }
