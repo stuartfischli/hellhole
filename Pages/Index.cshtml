@@ -4,14 +4,8 @@
     ViewData["Title"] = "Barry the Bear";
 }
 
-@{void btnRefresh_Click(object sender, EventArgs e)
-{
-    assignSeating();
-}
-}
 @{
-    void assignSeating()
-    {
+    
     var Hellhole = "";
     var GoodPlace = "";
     var MediumPlace = "";
@@ -55,14 +49,13 @@
         MediumPlace = "Nard";
         BadPlace = "Gus";
     }
-}
+
     
 }
 
 <div class="text-center">
     <h1 style="font-size:300%;font-family:arial;">Seating Arrangements</h1>
     <p style="color:#58F908;font-size:150%;text-align:center;font-family:verdana;">@displayDate</p>
-    <asp:Button runat="server" id="btnRefresh" Text="Refresh" OnClick="btnRefresh_Click" />
     <hr />
     <div style="color:#08BBF9;font-size:140%;text-align:center;font-family:verdana;">Good Place: @GoodPlace</div>
     <div style="color:#08BBF9;font-size:140%;text-align:center;font-family:verdana;">Medium Place: @MediumPlace</div>
