@@ -19,8 +19,29 @@
     var displayDate = DateTime.Today.ToLongDateString();
 
     var rem = 0;
-    Math.DivRem(totalDays, 4, out rem);
-    
+    Math.DivRem(totalDays, 3, out rem);
+
+    if (rem == 0)
+    {
+        GoodPlace = "Gus";
+        MediumPlace = "Terry";
+        BadPlace = "Nard";
+    }
+    else if (rem == 1)
+    {
+        GoodPlace = "Nard";
+        MediumPlace = "Gus";
+        BadPlace = "Terry";
+    }
+    else if (rem == 2)
+    {
+        GoodPlace = "Terry";
+        MediumPlace = "Nard";
+        BadPlace = "Gus";
+    }
+
+
+/*
     if (rem == 0)
     {
         Hellhole = "Gus";
@@ -49,6 +70,7 @@
         MediumPlace = "Nard";
         BadPlace = "Gus";
     }
+*/
 
     
 }
@@ -60,5 +82,5 @@
     <div style="color:#08BBF9;font-size:140%;text-align:center;font-family:verdana;">Good Place: @GoodPlace</div>
     <div style="color:#08BBF9;font-size:140%;text-align:center;font-family:verdana;">Medium Place: @MediumPlace</div>
     <div style="color:#08BBF9;font-size:140%;text-align:center;font-family:verdana;">Bad Place: @BadPlace</div>
-    <div style="color:#08BBF9;font-size:140%;text-align:center;font-family:verdana;">Hellhole: @Hellhole</div>
+    <!--<div style="color:#08BBF9;font-size:140%;text-align:center;font-family:verdana;">Hellhole: @Hellhole</div>-->
 </div>
