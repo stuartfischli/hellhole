@@ -19,7 +19,7 @@
     var totalDays = (currentDate - startDate).Days;
     var displayDate = DateTime.Today.ToLongDateString();
 
-    if (isMasonHere) {
+    if (isMasonHere == true) {
         var rem = 0;
         Math.DivRem(totalDays, 4, out rem);
     
