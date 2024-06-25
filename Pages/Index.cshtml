@@ -19,7 +19,7 @@
     var totalDays = (currentDate - startDate).Days;
     var displayDate = DateTime.Today.ToLongDateString();
 
-    if (isMasonHere == true) {
+    if (isMasonHere) {
         var rem = 0;
         Math.DivRem(totalDays, 4, out rem);
     
@@ -59,21 +59,21 @@
         
         if (rem == 0)
         {
-            BadPlace = "Gus";
-            GoodPlace = "Terry";
-            MediumPlace = "Nard";
-        }
-        else if (rem == 1)
-        {
             BadPlace = "Nard";
             GoodPlace = "Gus";
             MediumPlace = "Terry";
         }
-        else if (rem == 2)
+        else if (rem == 1)
         {
+            BadPlace = "Terry";
             GoodPlace = "Nard";
             MediumPlace = "Gus";
-            BadPlace = "Terry";
+        }
+        else if (rem == 2)
+        {
+            GoodPlace = "Terry";
+            MediumPlace = "Nard";
+            BadPlace = "Gus";
         }
     }
     
