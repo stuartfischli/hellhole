@@ -5,7 +5,8 @@
 }
 
 @{
-    
+    var isMasonHere = false;
+
     var Hellhole = "";
     var GoodPlace = "";
     var MediumPlace = "";
@@ -18,38 +19,63 @@
     var totalDays = (currentDate - startDate).Days;
     var displayDate = DateTime.Today.ToLongDateString();
 
-    var rem = 0;
-    Math.DivRem(totalDays, 4, out rem);
-
-    if (rem == 0)
-    {
-        Hellhole = "Gus";
-        GoodPlace = "Terry";
-        MediumPlace = "Maggie";
-        BadPlace = "Nard";
+    if (isMasonHere) {
+        var rem = 0;
+        Math.DivRem(totalDays, 4, out rem);
+    
+        if (rem == 0)
+        {
+            Hellhole = "Gus";
+            GoodPlace = "Terry";
+            MediumPlace = "Maggie";
+            BadPlace = "Nard";
+        }
+        else if (rem == 1)
+        {
+            Hellhole = "Nard";
+            GoodPlace = "Gus";
+            MediumPlace = "Terry";
+            BadPlace = "Maggie";
+        }
+        else if (rem == 2)
+        {
+            Hellhole = "Maggie";
+            GoodPlace = "Nard";
+            MediumPlace = "Gus";
+            BadPlace = "Terry";
+        }
+        else if (rem == 3)
+        {
+            Hellhole = "Terry";
+            GoodPlace = "Maggie";
+            MediumPlace = "Nard";
+            BadPlace = "Gus";
+        }
     }
-    else if (rem == 1)
-    {
-        Hellhole = "Nard";
-        GoodPlace = "Gus";
-        MediumPlace = "Terry";
-        BadPlace = "Maggie";
+    else {
+        var rem = 0;
+        Math.DivRem(totalDays, 3, out rem);
+        Hellhole = "Mason's Ghost"
+        
+        if (rem == 0)
+        {
+            BadPlace = "Gus";
+            GoodPlace = "Terry";
+            MediumPlace = "Nard";
+        }
+        else if (rem == 1)
+        {
+            BadPlace = "Nard";
+            GoodPlace = "Gus";
+            MediumPlace = "Terry";
+        }
+        else if (rem == 2)
+        {
+            GoodPlace = "Nard";
+            MediumPlace = "Gus";
+            BadPlace = "Terry";
+        }
     }
-    else if (rem == 2)
-    {
-        Hellhole = "Maggie";
-        GoodPlace = "Nard";
-        MediumPlace = "Gus";
-        BadPlace = "Terry";
-    }
-    else if (rem == 3)
-    {
-        Hellhole = "Terry";
-        GoodPlace = "Maggie";
-        MediumPlace = "Nard";
-        BadPlace = "Gus";
-    }
-
     
 }
 
