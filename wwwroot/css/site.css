@@ -12,7 +12,8 @@ html {
   position: relative;
   min-height: 100%;
   min-width: 100%;
-  background-image: url('https://hellholeseating.blob.core.windows.net/seatingarrangements/peter_griffin.jpg');
+  /*background-image: url('https://hellholeseating.blob.core.windows.net/seatingarrangements/peter_griffin.jpg');*/
+  background-image: url('https://hellholeseating.blob.core.windows.net/seatingarrangements/family-guy-peter-on-toilet-bowl-tcntoe8aopkvltif.jpg');
   background-size: 95%;
   background-repeat: no-repeat;
   background-position: bottom 40px center;
