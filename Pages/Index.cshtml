@@ -11,6 +11,7 @@
     var GoodPlace = "";
     var MediumPlace = "";
     var BadPlace = "";
+    var ChairHole = "";
     
     
     
@@ -25,7 +26,8 @@
     
         if (rem == 0)
         {
-            Hellhole = "Gus";
+            Hellhole = "Gus";            
+            ChairHole = "Devo";
             GoodPlace = "Gra";
             MediumPlace = "Maggie";
             BadPlace = "Nard";
@@ -33,23 +35,26 @@
         else if (rem == 1)
         {
             Hellhole = "Nard";
-            GoodPlace = "Gus";
+            ChairHole = "Gus"
+            GoodPlace = "Devo";
             MediumPlace = "Gra";
             BadPlace = "Maggie";
         }
         else if (rem == 2)
         {
             Hellhole = "Maggie";
-            GoodPlace = "Nard";
-            MediumPlace = "Gus";
+            ChairHole = "Nard"
+            GoodPlace = "Gus";
+            MediumPlace = "Devo";
             BadPlace = "Gra";
         }
         else if (rem == 3)
         {
             Hellhole = "Gra";
-            GoodPlace = "Maggie";
-            MediumPlace = "Nard";
-            BadPlace = "Gus";
+            ChairHole = "Maggie"
+            GoodPlace = "Nard";
+            MediumPlace = "Gus";
+            BadPlace = "Devo";
         }
     }
     else {
@@ -62,18 +67,21 @@
             BadPlace = "Gra";
             GoodPlace = "Nard";
             MediumPlace = "Gus";
+            Hellhole = "Devo";
         }
         else if (rem == 1)
         {
             BadPlace = "Gus";
-            GoodPlace = "Gra";
+            GoodPlace = "Devo";
             MediumPlace = "Nard";
+            Hellhole = "Gra"
         }
         else if (rem == 2)
         {
-            GoodPlace = "Gus";
-            MediumPlace = "Gra";
+            GoodPlace = "Gra";
+            MediumPlace = "Devo";
             BadPlace = "Nard";
+            Hellhole = "Gus"
         }
     }
     
