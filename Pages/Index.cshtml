@@ -11,7 +11,7 @@
     var GoodPlace = "";
     var MediumPlace = "";
     var BadPlace = "";
-    var ChairHole = "";
+    var ChairHole = "Shrew";
     
     
     
@@ -27,61 +27,55 @@
         if (rem == 0)
         {
             Hellhole = "Gus";            
-            ChairHole = "Devo";
-            GoodPlace = "Gra";
+            GoodPlace = "Devo";
             MediumPlace = "Maggie";
             BadPlace = "Nard";
         }
         else if (rem == 1)
         {
             Hellhole = "Nard";
-            ChairHole = "Gus";
-            GoodPlace = "Devo";
-            MediumPlace = "Gra";
+            GoodPlace = "Gus";
+            MediumPlace = "Devo";
             BadPlace = "Maggie";
         }
         else if (rem == 2)
         {
             Hellhole = "Maggie";
-            ChairHole = "Nard";
-            GoodPlace = "Gus";
-            MediumPlace = "Devo";
-            BadPlace = "Gra";
-        }
-        else if (rem == 3)
-        {
-            Hellhole = "Gra";
-            ChairHole = "Maggie";
             GoodPlace = "Nard";
             MediumPlace = "Gus";
             BadPlace = "Devo";
+        }
+        else if (rem == 3)
+        {
+            Hellhole = "Devo";
+            GoodPlace = "Maggie";
+            MediumPlace = "Nard";
+            BadPlace = "Gus";
         }
     }
     else {
         var rem = 0;
         Math.DivRem(totalDays, 3, out rem);
-        Hellhole = "Mason's Ghost";
+        Hellhole = "Shrew";
+        ChairHole = "Mason's Ghost";
         
         if (rem == 0)
         {
-            BadPlace = "Gra";
+            BadPlace = "Devo";
             GoodPlace = "Nard";
             MediumPlace = "Gus";
-            Hellhole = "Devo";
         }
         else if (rem == 1)
         {
             BadPlace = "Gus";
             GoodPlace = "Devo";
             MediumPlace = "Nard";
-            Hellhole = "Gra";
         }
         else if (rem == 2)
         {
-            GoodPlace = "Gra";
-            MediumPlace = "Devo";
-            BadPlace = "Nard";
-            Hellhole = "Gus";
+            GoodPlace = "Nard";
+            MediumPlace = "Gus";
+            BadPlace = "Devo";
         }
     }
     
