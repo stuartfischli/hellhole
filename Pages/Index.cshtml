@@ -10,7 +10,7 @@
     var GoodPlace = "";
     var MediumPlace = "";
     var BadPlace = "";
-    var ChairHole = "Mason's Ghost";
+    var ChairHole = "";
     
     
     
@@ -20,35 +20,47 @@
     var displayDate = DateTime.Today.ToLongDateString();
 
     var rem = 0;
-    Math.DivRem(totalDays, 4, out rem);
+    Math.DivRem(totalDays, 5, out rem);
     
         if (rem == 0)
-        {
-            Hellhole = "Gus";            
+        {          
             GoodPlace = "Devo";
             MediumPlace = "Shrew";
             BadPlace = "Nard";
+            Hellhole = "Gus";  
+            ChairHole = "Tim"
         }
         else if (rem == 1)
         {
-            Hellhole = "Nard";
-            GoodPlace = "Gus";
+            GoodPlace = "Tim";
             MediumPlace = "Devo";
             BadPlace = "Shrew";
+            Hellhole = "Nard";  
+            ChairHole = "Gus"
         }
         else if (rem == 2)
         {
-            Hellhole = "Shrew";
-            GoodPlace = "Nard";
-            MediumPlace = "Gus";
+            GoodPlace = "Gus";
+            MediumPlace = "Tim";
             BadPlace = "Devo";
+            Hellhole = "Shrew";  
+            ChairHole = "Nard"
         }
         else if (rem == 3)
         {
-            Hellhole = "Devo";
+            GoodPlace = "Nard";
+            MediumPlace = "Gus";
+            BadPlace = "Tim";
+            Hellhole = "Devo";  
+            ChairHole = "Shrew"
+        }
+        else if (rem == 4)
+        {
             GoodPlace = "Shrew";
             MediumPlace = "Nard";
             BadPlace = "Gus";
+            Hellhole = "Tim";  
+            ChairHole = "Devo"
         }
     
 }
